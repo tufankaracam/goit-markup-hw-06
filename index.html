@@ -31,16 +31,7 @@
           <a class="logo link" href="./index.html"
             >Web<span class="header-nav-logo-studio">Studio</span>
           </a>
-          <button
-            class="open-menu menu-toggle js-open-menu"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg class="menu-icon" width="30" height="19">
-              <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
+
           <ul class="list list-header">
             <li class="header-nav-item">
               <a class="nav-link current link" href="./index.html">Studio</a>
@@ -73,6 +64,16 @@
             </li>
           </ul>
         </address>
+        <button
+          class="open-menu menu-toggle js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-icon" width="30" height="19">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -157,23 +158,38 @@
           <ul class="list work-list">
             <li class="work-item">
               <img
+                srcset="
+                  ./images/images-section3/img1.jpg    1x,
+                  ./images/images-section3/img1_2x.jpg 2x
+                "
                 src="./images/images-section3/img1.jpg"
                 alt="Work1"
                 width="360"
+                loading="lazy"
               />
             </li>
             <li class="work-item">
               <img
+                srcset="
+                  ./images/images-section3/img2.jpg    1x,
+                  ./images/images-section3/img2_2x.jpg 2x
+                "
                 src="./images/images-section3/img2.jpg"
                 alt="Work2"
                 width="360"
+                loading="lazy"
               />
             </li>
             <li class="work-item">
               <img
+                srcset="
+                  ./images/images-section3/img3.jpg    1x,
+                  ./images/images-section3/img3_2x.jpg 2x
+                "
                 src="./images/images-section3/img3.jpg"
                 alt="Work3"
                 width="360"
+                loading="lazy"
               />
             </li>
           </ul>

@@ -18,7 +18,7 @@
   |============================
 */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
 }
@@ -110,11 +110,8 @@ img {
 .header {
   border-bottom: 1px solid var(--CORNFLOWER);
   background: var(--WHITE);
-  height: 72px;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
-
-  display: flex;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -127,7 +124,7 @@ img {
   align-items: center;
 }
 .header-nav-logo-wed {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -138,7 +135,7 @@ img {
 }
 
 .header-nav-logo-studio {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -155,25 +152,24 @@ img {
 
 @media screen and (min-width: 768px) {
   .list-header {
-    margin-right: 60px;
     display: flex;
     gap: 40px;
   }
 }
 @media screen and (min-width: 1158px) {
   .list-header {
-    margin-right: 121px;
     display: flex;
     gap: 40px;
   }
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
   line-height: 1.17;
+  padding: 17px 0;
   letter-spacing: 0.54px;
   color: var(--IRIS);
 
@@ -204,8 +200,8 @@ img {
 .nav-link {
   padding-top: 24px;
   padding-bottom: 24px;
-
-  font-family: 'Roboto', sans-serif;
+  display: block;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -220,7 +216,7 @@ img {
   color: var(--OCEAN);
 }
 .current::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -238,7 +234,15 @@ img {
 .header-address {
   margin-left: auto;
   font-style: normal;
+  display: none;
 }
+
+@media screen and (min-width: 768px) {
+  .header-address {
+    display: block;
+  }
+}
+
 .address-list {
   display: none;
 }
@@ -258,8 +262,8 @@ img {
   }
 }
 .address-link {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -270,6 +274,7 @@ img {
 }
 @media screen and (min-width: 1158px) {
   .address-link {
+    font-size: 16px;
     padding-top: 24px;
     padding-bottom: 24px;
   }
@@ -290,7 +295,10 @@ img {
   padding: 112px 0;
   background: var(--NAVY-BLUE);
 
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../images/Dark-bg_mod.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -299,19 +307,28 @@ img {
 
 @media screen and (max-width: 767.98px) and (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url(../images/Dark-bg_mod@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url(../images/Dark-bg_tab.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url(../images/Dark-bg_tab@2x.jpg);
   }
 }
@@ -320,13 +337,19 @@ img {
     max-width: 1440px;
     margin: 0 auto;
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url(../images/people-office\ 1_desk.jpg);
   }
 }
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
       url(../images/people-office\ 1_desk@2x.jpg);
   }
 }
@@ -338,7 +361,7 @@ img {
 
   text-align: center;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   line-height: 1.1; /* 111.111% */
   font-style: normal;
@@ -363,7 +386,7 @@ img {
 }
 
 .btn {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -455,7 +478,7 @@ img {
   }
 }
 .feature-item-titel {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -509,7 +532,7 @@ img {
   margin-bottom: 72px;
   text-align: center;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -550,7 +573,7 @@ img {
 .team-title {
   margin-bottom: 72px;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -586,7 +609,8 @@ img {
 .team-item {
   border-radius: 0px 0px 4px 4px;
   background: var(--WHITE);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
@@ -596,7 +620,7 @@ img {
 .team-item-title {
   margin-bottom: 8px;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -664,7 +688,7 @@ img {
 .customers-titel {
   margin-bottom: 72px;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -735,7 +759,6 @@ img {
 }
 .container-client-icons:hover,
 .container-client-icons:focus {
-  border: 1px solid var(--OCEAN);
   fill: var(--OCEAN);
 }
 
@@ -758,7 +781,7 @@ img {
 .filters-item {
 }
 .filters-item-button {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -776,7 +799,8 @@ img {
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters-item-button:hover,
 .filters-item-button:focus {
@@ -813,15 +837,15 @@ img {
 }
 .overlay-link:hover,
 .overlay-link:focus {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .overlay {
   position: relative;
   overflow: hidden;
 }
 .overlay-text {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -851,11 +875,11 @@ img {
 .row-titel-paragrah:focus {
   border: 1px solid var(--CLOUD);
   background: var(--WHITE);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .row-item-titel {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -866,7 +890,7 @@ img {
   margin-bottom: 8px;
 }
 .row-item-paragraph {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -903,6 +927,7 @@ img {
   .footer-container {
     flex-wrap: nowrap;
     width: 1158px;
+    gap: unset;
     align-items: baseline;
   }
 }
@@ -925,7 +950,7 @@ img {
   }
 }
 .footer-link {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -938,7 +963,7 @@ img {
   text-transform: uppercase;
 }
 .footer-logo-studio {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -949,7 +974,7 @@ img {
   text-transform: uppercase;
 }
 .footer-paragraph {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -970,7 +995,7 @@ img {
   }
 }
 .social-paragraph {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1018,7 +1043,7 @@ img {
 .footer-subscribe {
 }
 .subscribe-paragraph {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1085,7 +1110,7 @@ img {
   justify-content: center;
   align-items: center;
 
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1136,6 +1161,7 @@ img {
 
   transform: translateX(-50%) translateY(-50%);
   width: 100%;
+  max-width: 408px;
   min-height: 584px;
   padding: 72px 24px 24px 24px;
 
@@ -1190,7 +1216,7 @@ img {
 }
 
 .modal-title {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1207,7 +1233,7 @@ img {
 } */
 
 .footer-sub-label {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1240,7 +1266,7 @@ img {
   border: none;
   cursor: pointer;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1257,7 +1283,7 @@ img {
   margin-bottom: 8px;
 }
 .modal-label {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1313,7 +1339,7 @@ img {
   max-width: 360px;
   padding: 8px 16px;
 
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1339,7 +1365,7 @@ img {
 .modal-form-ladel-checkbox {
   display: block;
 
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1360,10 +1386,11 @@ img {
   fill: transparent;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-link {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -1397,7 +1424,7 @@ img {
   border: none;
   cursor: pointer;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1428,7 +1455,8 @@ img {
   padding: 80px 35px 40px 40px;
 
   background: var(--WHITE);
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
   z-index: 999;
 
@@ -1443,9 +1471,11 @@ img {
   top: 16px;
   right: 16px;
   color: #fff;
+  border-radius: 50%;
+  border-color: var(--CORNFLOWER);
+  padding: 11px;
 }
 .menu-toggle {
-  position: absolute;
   top: 24px;
   right: 24px;
 
@@ -1459,8 +1489,6 @@ img {
   cursor: pointer;
 
   background-color: var(--WHITE);
-  border: 1px solid var(--CORNFLOWER);
-  border-radius: 50%;
 }
 @media (min-width: 768px) {
   .menu-toggle {
@@ -1471,7 +1499,7 @@ img {
   margin-bottom: auto;
 }
 .mobel-menu-link {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -1495,7 +1523,7 @@ img {
   margin-bottom: 48px;
 }
 .mobel-contacts-link {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
